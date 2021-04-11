@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Industry Gourmet</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="header container-full">
+      <nav class="navbar">
+        <div class="logo"><img src="img/ig_logo.png" alt="LOGO" /></div>
+        <div class="push-left">
+          <button id="menu-toggler" data-class="menu-active" class="hamburger">
+            <span class="hamburger-line hamburger-line-top"></span>
+            <span class="hamburger-line hamburger-line-middle"></span>
+            <span class="hamburger-line hamburger-line-bottom"></span>
+          </button>
 
-    <script src="js/script.min.js"></script>
-</body>
+          <!--  Menu compatible with wp_nav_menu  -->
+          <ul id="primary-menu" class="menu nav-menu">
+            <li class="menu-item current-menu-item active-page">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="menu-item"><a class="nav__link" href="#">About Us</a></li>
+            <li class="menu-item"><a class="nav__link" href="#">Services</a></li>
+            <li class="menu-item"><a class="nav__link" href="#">Portfolio</a></li>
+            <li class="menu-item"><a class="nav__link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header-content">
+        <div class="header-title">
+          <h1>WE ARE <div id="rotate"> <div>Industry Gourmet</div> <div>Creative</div> <div>Innovate</div> </div> </h1>
+        </div>
+        <div class="header-desc">
+          <span>BRANDING</span> / <span>DESIGN</span> / <span>DEVELOPMENT</span> / <span>DEVELOPMENT</span>
+        </div>
+        <a class="btn header-button">
+          See More
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
