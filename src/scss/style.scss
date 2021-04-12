@@ -1,4 +1,3 @@
-// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,700&display=swap');
 $primary: #4b4e53;
 $secondary: #ffffff;
@@ -250,32 +249,6 @@ body {
 }
 
 // masonary
-.masonary-img  {
-	text-align: center;
-	padding: 1rem 0;
-	color: white;
-	font-size: 3rem;
-	text-transform: uppercase;
-	background: rgba(0,0,0,.2);
-	overflow: hidden;
-	padding: 0;
-	display: flex;
-	align-items: stretch;
-	justify-content: center;
-}
-.masonary-img img {
-	width: 100%;
-	height: 100%;
-	display: block;
-	object-fit: cover;
-	object-position: center;
-	transition: all .5s;
-}
-.masonary-img:hover img {
-	cursor: pointer;
-	transform: scale(1.3);
-  filter: grayscale(1);
-}
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -288,4 +261,83 @@ body {
 }
 .grid-layout .masonary-medium {
   grid-row-end: span 2;
+}
+.masonary-img  {
+  // position: relative;
+	text-align: center;
+	color: white;
+	font-size: 3rem;
+	text-transform: uppercase;
+	background: rgba(0,0,0,.2);
+	overflow: hidden;
+	padding: 0;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   background-color: #303236;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   opacity: 0;
+  //   z-index: 50;
+  // }
+
+  // &:hover::after {
+  //   opacity: 1;
+  // }
+
+}
+.masonary-img a {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+.masonary-img img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	object-position: center;
+	transition: all .5s;
+}
+.masonary-img:hover img {
+	cursor: pointer;
+	transform: scale(1.3);
+}
+
+.masonary-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.masonary-overlay .overlay-text{
+  color: $secondary;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 50px;
+  left: 15%;
+  transform: translate(-15%, -15%);
+  text-align: left;
+
+  span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #bbbbbb;
+    
+  }
+}
+.masonary-img:hover .masonary-overlay {
+  opacity: 1;
 }
