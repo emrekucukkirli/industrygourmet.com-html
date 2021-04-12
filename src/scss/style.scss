@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,700&display=swap');
 $primary: #4b4e53;
 $secondary: #ffffff;
 $ternary: #272727;
@@ -17,7 +18,7 @@ img {
   }
 a,
 button {
-    font-family: inherit;
+    font-family: 'Poppins', sans-serif;
     font-size: inherit;
     line-height: inherit;
     cursor: pointer;
@@ -28,7 +29,7 @@ button {
     color: $primary;
 }
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: normal;
   font-style: normal;
   color: $primary;
@@ -202,6 +203,7 @@ body {
 
   span {
     padding: 0 10px;
+    text-transform: uppercase;
   }
 }
 
@@ -232,10 +234,22 @@ body {
   margin-top: 50px;
 }
 
+.section-title {
+  text-align: center;
+  padding: 50px 0;
+  
+  h2 {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
 // masonary
-
-
-
 .masonary-img  {
 	text-align: center;
 	padding: 1rem 0;
@@ -249,7 +263,6 @@ body {
 	align-items: stretch;
 	justify-content: center;
 }
-
 .masonary-img img {
 	width: 100%;
 	height: 100%;
@@ -258,16 +271,11 @@ body {
 	object-position: center;
 	transition: all .5s;
 }
-
-
-
 .masonary-img:hover img {
 	cursor: pointer;
 	transform: scale(1.3);
   filter: grayscale(1);
 }
-
-
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
