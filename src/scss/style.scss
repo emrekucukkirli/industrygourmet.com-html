@@ -2,6 +2,9 @@
 $primary: #4b4e53;
 $secondary: #ffffff;
 $ternary: #272727;
+$fw-thin:300;
+$fw-medium:400;
+$fw-bold:700;
 *,
 *:before,
 *:after {
@@ -29,7 +32,7 @@ button {
 }
 body {
 	font-family: 'Poppins', sans-serif;
-	font-weight: normal;
+	font-weight: $fw-medium;
   font-style: normal;
   color: $primary;
 }
@@ -127,6 +130,7 @@ body {
     transform: translatey(-100%);
     text-align: left;
     height: 450px;
+    z-index: 50;
 
     .menu-active & {
       transform: translateY(0%);
@@ -140,7 +144,7 @@ body {
     line-height: 30px;
     margin: 0 15px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: $fw-medium;
     font-size: 14px;
 
     &:hover {
@@ -150,6 +154,7 @@ body {
     @media screen and (max-width:786px) {
       font-size: 20px;
       margin: 8px;
+      z-index: 51;
     }
   }
 }
@@ -185,12 +190,12 @@ body {
   h1 {
     font-size: 72px;
     color: $secondary;
-    font-weight: 300;
+    font-weight: $fw-thin;
     line-height: 72px;
     letter-spacing: 20px;
 
     div {
-      font-weight: 700;
+      font-weight: $fw-bold;
       display: inline;
       text-transform: uppercase;
     }
@@ -214,7 +219,7 @@ body {
   color: $secondary;
   padding: 15px 25px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: $fw-thin;
   text-align: center;
   background-color: transparent;
   margin-left: auto;
@@ -238,12 +243,14 @@ body {
   padding: 50px 0;
   
   h2 {
-    font-weight: 300;
+    font-weight: $fw-thin;
     font-size: 30px;
     line-height: 30px;
+    text-transform: uppercase;
+    color: $primary;
 
     span {
-      font-weight: 700;
+      font-weight: $fw-bold;
     }
   }
 }
@@ -274,22 +281,6 @@ body {
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
-
-  // &::after {
-  //   position: absolute;
-  //   content: "";
-  //   background-color: #303236;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   opacity: 0;
-  //   z-index: 50;
-  // }
-
-  // &:hover::after {
-  //   opacity: 1;
-  // }
-
 }
 .masonary-img a {
   display: block;
@@ -324,7 +315,7 @@ body {
 .masonary-overlay .overlay-text{
   color: $secondary;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: $fw-bold;
   position: absolute;
   top: 50px;
   left: 15%;
@@ -333,11 +324,98 @@ body {
 
   span {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: $fw-thin;
     color: #bbbbbb;
     
   }
 }
 .masonary-img:hover .masonary-overlay {
   opacity: 1;
+}
+.our-works-btn {
+  color: $primary;
+  padding: 35px 0;
+  background-color: #eee;
+  border: none;
+  font-size: 20px;
+
+  &:hover {
+    background:#dedede;
+    text-decoration: underline;
+  }
+}
+
+// iconmaps
+.icon-map {
+  display: flex;
+  align-items: flex-start;
+  padding: 100px 0;
+}
+.icon-map-mockup {
+  width: 33%;
+  height: auto;
+}
+.icon-map-context {
+  display: flex;
+  flex-direction: column;
+  width: 67%;
+  padding: 20px;
+}
+.icon-map-title {
+  position: relative;
+  padding-top: 0;
+
+  h2 {  
+    font-size: 60px;
+    text-align: left;
+    margin-top: 0;
+
+    span{
+    line-height: 80px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15%;
+    height: 3px;
+    left: 0;
+    top: 60%;
+    background-color: $ternary;
+  }
+}
+.icon-map-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.icon-map-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 47%;
+  padding: 15px 0;
+}
+.icon-map-icon {
+  width: 15%;
+}
+.icon-map-text {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.icon-map-subtitle {
+  font-weight: $fw-bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+.icon-map-desc {
+  color: #7e8082;
+  font-size: 14px;
+  line-height: 20px;
 }
