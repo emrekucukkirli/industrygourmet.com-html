@@ -688,7 +688,7 @@ hr {
   background: url(../img/work-proc-bg.jpg);
   background-attachment: fixed;
   color: $secondary;
-  padding: 70px 0;
+  padding: 100px 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -698,6 +698,20 @@ hr {
   font-size: 36px;
   font-weight: $fw-thin;
   text-transform: uppercase;
+}
+.video-btn {
+
+
+  i {
+    font-size: 84px;
+    padding: 0 20px;
+    color: $secondary;
+    transition: all .25s ease-in;
+  }
+
+  &:hover i {
+    color: $primary;
+  }
 }
 // Counter
 .counter-list {
