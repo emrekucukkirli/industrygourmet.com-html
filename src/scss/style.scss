@@ -1212,9 +1212,83 @@ hr {
       margin: 30px auto;
     }
 }
-
-
-
+@media(min-width:$tablet-hor){
+  .grid-layout {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .icon-map {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 100px 0;
+  }
+  .icon-map-mockup {
+    order: -1;
+    width: 32%;
+  }
+  .icon-map-context {
+    width: 68%;
+  }
+  .icon-map-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  .about-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about-card-second .about-img {
+    order: -1;
+  }
+  .about-img, .about-text {
+    width: 50%;
+    text-align: center;
+  }
+  .our-services, .work-proces {
+    padding: 80px 0;
+  }
+  .packages-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      color: #000;
+    }
+    .packages-item:last-child .packages-content {
+      order: -1;
+    }
+    .packages-img, .packages-content {
+      width: 47%;
+    }
+    .video {
+      flex-direction: row;
+    }
+    .home-contact-item {
+      width: 33%;
+    }
+    .cta-container {
+      width: 97%;
+      flex-direction: row;
+    }
+    .cta-info {
+      width: 47%;
+    }
+    .cta-form {
+      width: 53%;
+      input {
+        width: 70%;
+      }
+      select {
+        width: 70%;
+      }
+      textarea {
+        width: 70%;
+      }
+    }
+}
 
 
 
