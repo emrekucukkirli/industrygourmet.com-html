@@ -1072,6 +1072,147 @@ hr {
   }
 }
 
+// mobile- horizontal 
+@media(min-width:$mobile) {
+  .grid-layout {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .icon-map-mockup {
+        width: 50%;
+      }
+}
+// tablet-vertical
+@media(min-width:$tablet) {
+  .header-title {
+      padding: 50px 0;
+      h1 {
+        font-size: 72px;
+        color: $secondary;
+        font-weight: $fw-thin;
+        line-height: 72px;
+        letter-spacing: 5px;
+        div {
+          font-weight: $fw-bold;
+          display: inline;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .header-desc {
+      font-size: 18px;
+    }
+    .icon-map-title {
+    
+      h2 {
+        font-size: 48px;
+    
+        span{
+          display: block;
+          line-height: 52px;
+        }
+      }
+    
+      &::after {
+        width: 15%;
+      }
+    }
+    .icon-map-item {
+      width: 47%;
+    }
+    .about-text {
+      margin: 25px 0;
+    }
+    .about-title {
+        position: relative;
+        padding-top: 0;
+        width: 70%;
+        margin: 20px auto;
+      
+        h2 {  
+          font-size: 30px;
+      
+          span{
+            display: block;
+            line-height: 36px;
+          }
+        }
+      
+        &::after {
+          top: 100%;
+          width: 13%;
+        }
+      }
+    .about-desc {
+      width: 70%;
+    }
+    .our-services {
+      width: 97%;
+    }
+    .service-card{
+      width: 31%;
+    }
+    .service-header {
+      justify-content: space-around;
+    }
+    .service-head {
+      width: 70%;
+    }
+    .services-title {
+    
+      h2 {  
+        font-size: 30px;
+        padding: 30px 0 20px 20px;
+    
+        span{
+          display: block;
+          line-height: 40px;
+        }
+      }
+    
+      &::after {
+        height: 90%;
+        top: 0px;
+      }
+    }
+    .work-proces-item {
+      width: 50%;
+    }
+    .counter-item {
+      width: 24%;
+    }
+    .email {
+      
+      .container{
+
+        flex-direction: row;
+        form {
+          width: 70%;
+          flex-direction: row;
+          input {
+            width: 60%;
+          }
+          .subscribe-btn {
+            padding: 0 45px;
+          }
+        }
+      }
+    }
+    .home-contact {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: start;
+      width: 90%;
+    }
+    .home-contact-item {
+      width: 50%;
+    }
+
+    .cta-form {
+      width: 80%;
+      margin: 30px auto;
+    }
+}
+
 
 
 
@@ -1267,7 +1408,7 @@ hr {
 //   position: relative;
 //   padding-top: 0;
 
-//   h2 {  
+//   h2 {
 //     font-size: 60px;
 //     text-align: left;
 //     margin-top: 0;
