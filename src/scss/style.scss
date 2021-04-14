@@ -5,6 +5,11 @@ $ternary: #272727;
 $fw-thin:300;
 $fw-medium:400;
 $fw-bold:700;
+$mobile:576px;
+$tablet:767px;
+$tablet-hor:992px;
+$mini-desktop:1200px;
+$desktop:1440px;
 *,
 *:before,
 *:after {
@@ -183,7 +188,6 @@ body {
   background-color: #303236;
   text-align: center;
 }
-
 .header-title {
   padding: 50px 0;
 
@@ -400,7 +404,11 @@ body {
   padding: 15px 0;
 }
 .icon-map-icon {
-  width: 15%;
+  width: 15%; 
+  text-align: center;
+  i {
+    font-size: 36px;
+  }
 }
 .icon-map-text {
   width: 85%;
@@ -413,12 +421,12 @@ body {
   font-weight: $fw-bold;
   font-size: 18px;
   text-transform: uppercase;
-  padding: 15px 0;
 }
 .icon-map-desc {
   color: #7e8082;
   font-size: 14px;
   line-height: 20px;
+  padding: 15px 0;
 }
 
 // about us
@@ -498,6 +506,10 @@ hr {
 }
 .service-icon{
   width: 20%;
+
+  i {
+    font-size: 36px;
+  }
 }
 .service-head {
   width: 80%;
@@ -608,6 +620,12 @@ hr {
 }
 .work-proces-icon{
   width: 20%;
+  text-align: center;
+
+  i {
+    font-size: 36px;
+    color: $secondary;
+  }
 }
 .work-proces-text {
   width: 70%;
