@@ -13,108 +13,37 @@
     <title>Industry Gourmet</title>
   </head>
   <body>
-    <div class="header home-header container-full">
-      <nav class="navbar">
-        <a href="index.html" class="logo"><img src="img/ig_logo.png" alt="LOGO" /></a>
-        <div class="push-left">
-          <button id="menu-toggler" data-class="menu-active" class="hamburger">
-            <span class="hamburger-line hamburger-line-top"></span>
-            <span class="hamburger-line hamburger-line-middle"></span>
-            <span class="hamburger-line hamburger-line-bottom"></span>
-          </button>
+    <div class="header container-full">
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="img/ig_logo.png" alt="LOGO" /></a>
+            <div class="push-left">
+              <button id="menu-toggler" data-class="menu-active" class="hamburger">
+                <span class="hamburger-line hamburger-line-top"></span>
+                <span class="hamburger-line hamburger-line-middle"></span>
+                <span class="hamburger-line hamburger-line-bottom"></span>
+              </button>
+    
+              <!--  Menu compatible with wp_nav_menu  -->
+              <ul id="primary-menu" class="menu nav-menu">
+                <li class="menu-item current-menu-item">
+                  <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="menu-item active-page"><a class="nav__link" href="about-us.html">About Us</a></li>
+                <li class="menu-item"><a class="nav__link" href="services.html">Services</a></li>
+                <li class="menu-item"><a class="nav__link" href="packages.html">Packages</a></li>
+                <li class="menu-item"><a class="nav__link" href="portfolio.html">Portfolio</a></li>
+                <li class="menu-item"><a class="nav__link" href="blog.html">Blog</a></li>
+                <li class="menu-item"><a class="nav__link" href="contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
 
-          <!--  Menu compatible with wp_nav_menu  -->
-          <ul id="primary-menu" class="menu nav-menu">
-            <li class="menu-item current-menu-item active-page">
-              <a class="nav__link" href="index.html">Home</a>
-            </li>
-            <li class="menu-item"><a class="nav__link" href="about-us.html">About Us</a></li>
-            <li class="menu-item"><a class="nav__link" href="services.html">Services</a></li>
-            <li class="menu-item"><a class="nav__link" href="packages.html">Packages</a></li>
-            <li class="menu-item"><a class="nav__link" href="portfolio.html">Portfolio</a></li>
-            <li class="menu-item"><a class="nav__link" href="blog.html">Blog</a></li>
-            <li class="menu-item"><a class="nav__link" href="contact-us.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="header-content">
-        <div class="header-title">
-          <h1>WE ARE <div id="rotate"> <div>Industry Gourmet</div> <div>Creative</div> <div>Innovate</div> </div> </h1>
-        </div>
-        <div class="header-desc">
-          <span>Branding</span> / <span>Marketing</span> / <span>Design</span> / <span>Development</span>
-        </div>
-        <a class="btn header-button">
-          See More
-        </a>
+      <div class="breadcumb">
+          <div class="container">
+            <div class="breadcumb-title">About Us</div>
+            <div class="breadcumb-path"><a href="index.html">Home</a> / <a class="breadcumb-active" href="about-us.html">About Us</a></div>
+          </div>
       </div>
-    </div>
-    <div class="our-works container-full">
-        <div class="section-title">
-          <h2>Our Latest <span>Works</span></h2>
-        </div>
-        <div class="grid-layout">
-          <div class="masonary-img masonary-small">
-            <a href="#">
-            <img src="https://picsum.photos/id/21/800" alt="">
-            <div class="masonary-overlay">
-              <div class="overlay-text">Minimalist Work <br> <span> UI Design / Media</span></div> 
-            </div>
-          </a>
-          </div>
-          <div class="masonary-img masonary-medium">
-            <a href="#">
-            <img src="https://picsum.photos/id/22/800/1000" alt="">
-            <div class="masonary-overlay">
-              <div class="overlay-text">Minimalist Work <br> <span> UI Design / Media</span></div> 
-            </div>
-          </a>
-          </div>
-          <div class="masonary-img masonary-big">
-            <a href="#">
-            <img src="https://picsum.photos/id/12/800" alt="">
-            <div class="masonary-overlay">
-              <div class="overlay-text">Minimalist Work <br> <span> UI Design / Media</span></div> 
-            </div>
-          </a>
-          </div>
-          <div class="masonary-img masonary-medium">
-            <a href="#">
-            <img src="https://picsum.photos/id/22/800/1000" alt="">
-            <div class="masonary-overlay">
-              <div class="overlay-text">Minimalist Work <br> <span> UI Design / Media</span></div> 
-            </div>
-          </a>
-          </div>
-          <div class="masonary-img masonary-medium">
-            <a href="#">
-            <img src="https://picsum.photos/id/22/800/1000" alt="">
-            <div class="masonary-overlay">
-              <div class="overlay-text">Minimalist Work <br> <span> UI Design / Media</span></div> 
-            </div>
-          </a>
-          </div>
-          <div class="masonary-img masonary-small">
-            <a href="#">
-            <img src="https://picsum.photos/id/21/800" alt="">
-            <div class="masonary-overlay">
-              <div class="overlay-text">Minimalist Work <br> <span> UI Design / Media</span></div> 
-            </div>
-          </a>
-          </div>
-          <div class="masonary-img masonary-small">
-            <a href="#">
-            <img src="https://picsum.photos/id/17/800" alt="">
-            <div class="masonary-overlay">
-              <div class="overlay-text">Minimalist Work <br> <span> UI Design / Media</span></div> 
-            </div>
-          </a>
-          </div>
-        </div>
-        <a class="btn our-works-btn">
-          View More Projects
-        </a>
     </div>
     <div class="icon-map container">
       <div class="icon-map-mockup">
@@ -169,9 +98,11 @@
       <div class="about-card">
         <div class="about-text">
           <div class="section-title about-title">
-            <h2>More Than <span>Responsive</span></h2>
+            <h2>Our <span>Mision</span></h2>
           </div>
-          <div class="about-desc">Sed ut perspiciatis unde omnis iste nat eror acus antium que. Asperiores, ea velit enim labore doloribus.</div>
+          <div class="about-desc">Sed ut perspiciatis unde omnis iste nat eror acus antium que. Asperiores, ea velit enim labore doloribus.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam sit non nobis dolore libero hic minima. Rem iure consequuntur harum, voluptatibus fuga nulla at tenetur error molestias odio illo rerum.
+          </div>
         </div>
         <div class="about-img">
           <img src="img/about.jpg" alt="">
@@ -180,9 +111,11 @@
       <div class="about-card about-card-second">
         <div class="about-text">
           <div class="section-title about-title">
-            <h2>Boxed & Wide <br> <span>Layouts</span></h2>
+            <h2>Our <br> <span>Vision</span></h2>
           </div>
-          <div class="about-desc">Sed ut perspiciatis unde omnis iste nat eror acus antium que. Asperiores, ea velit enim labore doloribus.</div>
+          <div class="about-desc">Sed ut perspiciatis unde omnis iste nat eror acus antium que. Asperiores, ea velit enim labore doloribus.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum nihil harum ipsa ab quibusdam eligendi quia suscipit, labore architecto deleniti in pariatur, eius obcaecati, qui voluptates porro tempora quidem provident.
+          </div>
         </div>
         <div class="about-img">
           <img src="img/about.jpg" alt="">
@@ -268,56 +201,6 @@
         </div>
     </div>
     <hr>
-    <div class="work-proces container-full">
-      <div class="work-proces-content container">
-        <div class="work-proces-head">
-          <div class="work-proces-title section-title">
-            <h2>Work <span>Proces</span></h2>
-          </div>
-          <div class="work-proces-desc">
-            Sed ut perspiciatis unde omnis iste nat eror acus antium que
-          </div>
-        </div>
-        <div class="work-proces-list">
-          <div class="work-proces-item">
-            <div class="work-proces-icon">
-              <i class="far fa-lightbulb"></i>
-            </div>
-            <div class="work-proces-text">
-              <div class="work-proces-subtitle">Planning</div>
-              <div class="work-proces-info">Lorem Ipsum Dolor</div>
-            </div>
-          </div>
-          <div class="work-proces-item">
-            <div class="work-proces-icon">
-              <i class="fas fa-cog"></i>
-            </div>
-            <div class="work-proces-text">
-              <div class="work-proces-subtitle">Development</div>
-              <div class="work-proces-info">Lorem Ipsum Dolor</div>
-            </div>
-          </div>
-          <div class="work-proces-item">
-            <div class="work-proces-icon">
-              <i class="fas fa-laptop"></i>
-            </div>
-            <div class="work-proces-text">
-              <div class="work-proces-subtitle">Design</div>
-              <div class="work-proces-info">Lorem Ipsum Dolor</div>
-            </div>
-          </div>
-          <div class="work-proces-item">
-            <div class="work-proces-icon">
-              <i class="far fa-paper-plane"></i>
-            </div>
-            <div class="work-proces-text">
-              <div class="work-proces-subtitle">Launch</div>
-              <div class="work-proces-info">Lorem Ipsum Dolor</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="packages container-full">
       <div class="packages-item container">
         <div class="packages-img">
@@ -349,32 +232,6 @@
         </div>
       </div>
     </div>
-    <div class="video container-full">
-      <div class="video-text">Be Creative</div>
-      <a href="#" class="video-btn">
-        <i class="far fa-play-circle"></i>
-      </a>
-      <div class="video-text">With I G</div>
-    </div>
-    <div class="counter-list container">
-      <div class="counter-item">
-        <div class="counter" data-target="12000"></div>
-        <span>Awards Winning</span>
-      </div>
-      <div class="counter-item">
-        <div class="counter" data-target="5000"></div>
-        <span>Happy Clients</span>
-      </div>
-      <div class="counter-item">
-        <div class="counter" data-target="7500"></div>
-        <span>Project Done</span>
-      </div>
-      <div class="counter-item">
-        <div class="counter" data-target="7500"></div>
-        <span>Hours of Code</span>
-      </div>
-    </div>
-    <hr>
     <div class="email container-full">
       <div class="container">
         <div class="email-icon"><i class="far fa-envelope"></i></div>
@@ -384,28 +241,12 @@
         </form>
       </div>
     </div>
-    <div class="home-contact container">
-      <div class="home-contact-item">
-        <div class="home-contact-icon"><i class="far fa-envelope"></i></div>
-        <div class="home-contact-info">
-          <div class="home-contact-title">Email</div>
-          <div class="home-contact-desc">info@industrygourmet.com</div>
-        </div>
-      </div>
-      <div class="home-contact-item">
-        <div class="home-contact-icon"><i class="fas fa-phone"></i></div>
-        <div class="home-contact-info">
-          <div class="home-contact-title">Turkey</div>
-          <a href="" class="home-contact-desc">0 551 122 6230</a>
-        </div>
-      </div>
-      <div class="home-contact-item">
-        <div class="home-contact-icon"><i class="fas fa-phone"></i></div>
-        <div class="home-contact-info">
-          <div class="home-contact-title">USA</div>
-          <a href="" class="home-contact-desc">1-800-312-212</a>
-        </div>
-      </div>
+    <div class="video container-full">
+      <div class="video-text">Be Creative</div>
+      <a href="#" class="video-btn">
+        <i class="far fa-play-circle"></i>
+      </a>
+      <div class="video-text">With I G</div>
     </div>
     <div class="cta container-full">
       <div class="cta-container container">
