@@ -1323,6 +1323,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
     padding: 0 20px;
 
     .breadcumb-title {
@@ -1332,6 +1333,11 @@ hr {
       letter-spacing: 5px;
       font-weight: $fw-medium;
       text-transform: uppercase;
+
+      .subtitle {
+        margin-bottom: 0;
+
+      }
     }
     .breadcumb-path {
       font-size: 12px;
@@ -1548,7 +1554,43 @@ box-sizing: border-box;
   font-weight: $fw-medium;
   font-size: 20px;
 }
+.related-posts h3 {
+  text-transform: uppercase;
+}
+.related-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.related-post-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 15px 0;
+}
+.related-post-title {
+  font-weight: $fw-bold;
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: $primary;
 
+  &:hover {
+    color: #aaa;
+    }
+  }
+  .related-post-info span {
+    color : #aaa;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+@media(min-width:$tablet) {
+  .related-post-item {
+    width: 30%;
+  }
+}
 @media(min-width:$tablet-hor) {
   .blog-index {
     width: 63%;
