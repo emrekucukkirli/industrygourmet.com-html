@@ -97,3 +97,11 @@ if ($('#back-to-top').length) {
       }, 700);
   });
 }
+
+// Swiper
+var swiper = new Swiper('.swiper-container', {
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+});
