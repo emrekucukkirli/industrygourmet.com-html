@@ -1627,18 +1627,20 @@ box-sizing: border-box;
   line-height: 24px;
   color: #777;
 }
-// Swiper
+
+.slider {
+  position: relative;
+  height: 100%;
+  padding: 50px 0;
+}
 .swiper-container {
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1652,7 +1654,30 @@ box-sizing: border-box;
   -webkit-align-items: center;
   align-items: center;
 }
+.swiper-pagination span {
+  background-color: $secondary;
+  opacity: 1;
 
+}
+.swiper-pagination-bullet-active {
+  transform: scale(1.5);
+}
+.swiper-button-prev, .swiper-button-next {
+  color: #777 !important;
+  background-color: $secondary !important;
+  padding: 35px 15px ;
+  box-shadow: 3px 2px 5px rgba(128, 128, 128, 0.438);
+
+  &:hover {
+    color: $primary !important;
+  }
+}
+.swiper-button-prev {
+  left: 0 !important;
+}
+.swiper-button-next{
+  right: 0 !important;
+}
 
 @media(min-width:$tablet) {
   .related-post-item {
@@ -1676,6 +1701,6 @@ box-sizing: border-box;
 
 @media(min-width:$mini-desktop) {
   .portfolio-details {
-    padding: 15px 0;
+    padding: 70px 0;
   }
 }

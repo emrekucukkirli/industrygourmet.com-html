@@ -99,9 +99,9 @@ if ($('#back-to-top').length) {
 }
 
 // Swiper
-var swiper = new Swiper('.swiper-container', {
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-  },
-});
+// var swiper = new Swiper('.swiper-container', {
+//   pagination: {
+//     el: '.swiper-pagination',
+//     dynamicBullets: true,
+//   },
+// });
