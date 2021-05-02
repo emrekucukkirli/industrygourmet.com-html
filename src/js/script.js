@@ -17,18 +17,15 @@ $(document).ready(function() {
 (function($){
   $.fn.extend({ 
       rotaterator: function(options) {
-
           var defaults = {
               fadeSpeed: 500,
               pauseSpeed: 100,
       child:null
           };
-           
           var options = $.extend(defaults, options);
-       
           return this.each(function() {
                 var o =options;
-                var obj = $(this);                
+                var obj = $(this);
                 var items = $(obj.children(), obj);
         items.each(function() {$(this).hide();})
         if(!o.child){var next = $(obj).children(':first');
@@ -46,8 +43,8 @@ $(document).ready(function() {
           });
       }
   });
-})(jQuery);
-
+})
+(jQuery);
 $(document).ready(function() {
       $('#rotate').rotaterator({fadeSpeed:2000, pauseSpeed:500});
 });
