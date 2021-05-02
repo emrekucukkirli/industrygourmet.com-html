@@ -11,11 +11,11 @@ $(document).ready(function() {
  });
 
 
- 
+
 // Rotate start
 
 (function($){
-  $.fn.extend({ 
+  $.fn.extend({
       rotaterator: function(options) {
 
           var defaults = {
@@ -23,12 +23,10 @@ $(document).ready(function() {
               pauseSpeed: 100,
       child:null
           };
-           
           var options = $.extend(defaults, options);
-       
           return this.each(function() {
                 var o =options;
-                var obj = $(this);                
+                var obj = $(this);
                 var items = $(obj.children(), obj);
         items.each(function() {$(this).hide();})
         if(!o.child){var next = $(obj).children(':first');
